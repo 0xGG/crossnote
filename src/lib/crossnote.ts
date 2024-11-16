@@ -794,7 +794,7 @@ export default class Crossnote {
         typeof notebook.gitCorsProxy === "string" &&
         notebook.gitCorsProxy.startsWith("https://crossnote.app/cors")
       ) {
-        notebook.gitCorsProxy = "https://cors.isomorphic-git.org";
+        notebook.gitCorsProxy = "https://isomorphic-git-cors-proxy.huaji.store";
       }
 
       if (n.directoryHandle) {

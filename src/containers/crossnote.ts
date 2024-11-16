@@ -837,13 +837,13 @@ function useCrossnoteContainer(initialState: InitialState) {
       } else {
         /*
         notebook = await crossnote.cloneNotebook({
-          corsProxy: "https://cors.isomorphic-git.org",
+          corsProxy: "https://isomorphic-git-cors-proxy.huaji.store",
           gitURL: "https://github.com/0xGG/crossnote-doc.git"
         });
         */
         notebook = await crossnote.addNotebook({
           name: "Drafts",
-          corsProxy: "https://cors.isomorphic-git.org",
+          corsProxy: "https://isomorphic-git-cors-proxy.huaji.store",
           gitURL: "",
         });
         await pfs.writeFile(
